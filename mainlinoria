@@ -57,7 +57,7 @@ ErrorMessageOut = game:GetService("LogService").MessageOut:Connect(function(Mess
         ErrorMessageOut:Disconnect()
 
         setclipboard("Executor: " .. identifyexecutor() .. "\n\n" .. tostring(Message))
-        Library:Notify(" Lolhax has errored while loading and will now unload. The error has been copied to your clipboard, please report this on the LX discord server! ", 4.5)
+        Library:Notify(" Ksc has errored while loading and will now unload. The error has been copied to your clipboard, please report this on the LX discord server! ", 4.5)
 
         task.delay(5, function()
             Library:Unload()
@@ -79,14 +79,14 @@ local Detection = game:GetService("TextChatService").MessageReceived:Connect(fun
         end
     elseif yeah.Metadata == "Ineedtheepikrespond" then
         if game:GetService("Players")[yeah.TextSource.Name] ~= LocalPlayer.Name then
-            SendChat:SendAsync("", "usingksc")
+            SendChat:SendAsync("", "usingksc/lolhax v3")
             game:GetService("Players")[yeah.TextSource.Name]:SetAttribute("USINGKSC", true)
         end
     end
 end)
 -- UI vvv
 
-local Window = Library:CreateWindow({ Title = " KSCOFFICAL ┃ ".. LocalPlayer.Name, Center = true, AutoShow = true, TabPadding = 3, MenuFadeTime = 0.15 })
+local Window = Library:CreateWindow({ Title = " KSC/LOLHAX ┃ ".. LocalPlayer.Name, Center = true, AutoShow = true, TabPadding = 3, MenuFadeTime = 0.15 })
 local Tabs = { General = Window:AddTab("General"), Exploit = Window:AddTab("Exploits"), ESP = Window:AddTab("ESP"), Visuals = Window:AddTab("Visuals"), Misc = Window:AddTab("Miscellaneous"), Config = Window:AddTab("Config") }
 
  if Type == Enum.MessageType.MessageError and not string.find(Message, "attempt to index nil with 'Value'") then
@@ -122,7 +122,7 @@ local Detection = game:GetService("TextChatService").MessageReceived:Connect(fun
 end)
 -- UI vvv
 
-local Window = Library:CreateWindow({ Title = " LOLHAX ┃ ".. LocalPlayer.Name, Center = true, AutoShow = true, TabPadding = 3, MenuFadeTime = 0.15 })
+local Window = Library:CreateWindow({ Title = " KSC/LOLHAX ┃ ".. LocalPlayer.Name, Center = true, AutoShow = true, TabPadding = 3, MenuFadeTime = 0.15 })
 local Tabs = { General = Window:AddTab("General"), Exploit = Window:AddTab("Exploits"), ESP = Window:AddTab("ESP"), Visuals = Window:AddTab("Visuals"), Misc = Window:AddTab("Miscellaneous"), Config = Window:AddTab("Config") }
 
 local GeneralAutomation = Tabs.General:AddLeftGroupbox("Automation")
